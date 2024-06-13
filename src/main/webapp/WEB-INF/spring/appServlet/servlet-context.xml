@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans
+        xmlns="http://www.springframework.org/schema/mvc"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:beans="http://www.springframework.org/schema/beans"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:task="http://www.springframework.org/schema/task"
+        xsi:schemaLocation="http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+    <!-- DispatcherServlet Context: defines this servlet's request-processing
+        infrastructure -->
+
+    <!-- Enables the Spring MVC @Controller programming model -->
+    <annotation-driven/>
+
+    <!-- Handles HTTP GET requests for /resources/** by efficiently serving
+        up static resources in the ${webappRoot}/resources directory -->
+    <resources mapping="/resources/**" location="/resources/"/>
+
+    <!-- Resolves views selected for rendering by @Controllers to .jsp resources
+        in the /WEB-INF/views directory -->
+    <beans:bean
+            class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <beans:property name="prefix" value="/WEB-INF/views/"/>
+        <beans:property name="suffix" value=".jsp"/>
+        <beans:property name="order" value="2"/><!-- 2순위(resolver
+			순서 설정) -->
+    </beans:bean>
+    <!-- tiles셋팅 -->
+    <beans:bean id="tilesConfigurer"
+                class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+        <beans:property name="definitions">
+            <beans:list>
+                <beans:value>classpath:tiles/*.xml</beans:value><!-- tiles 설정xml 주소 -->
+            </beans:list>
+        </beans:property>
+        <beans:property name="preparerFactoryClass"
+                        value="org.springframework.web.servlet.view.tiles3.SpringBeanPreparerFactory"/>
+    </beans:bean>
+
+    <beans:bean id="viewResolver"
+                class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <beans:property name="viewClass"
+                        value="org.springframework.web.servlet.view.tiles3.TilesView"></beans:property>
+        <beans:property name="order" value="1"/><!-- 1순위(resolver
+			순서 설정) -->
+    </beans:bean>
+
+    <!-- mybatis setting -->
+    <beans:bean name="dataSource"
+                class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <beans:property name="driverClassName"
+                        value="oracle.jdbc.driver.OracleDriver"/>
+        <beans:property name="url"
+                        value="jdbc:oracle:thin:@localhost:1521:xe"/>
+        <beans:property name="username" value="hr"/>
+        <beans:property name="password" value="123456"/>
+    </beans:bean>
+    <beans:bean id="sqlSessionFactory"
+                class="org.mybatis.spring.SqlSessionFactoryBean">
+        <beans:property name="dataSource" ref="dataSource"/>
+        <beans:property name="mapperLocations"
+                        value="classpath:com/tech/miaa/mapper/*.xml"/>
+    </beans:bean>
+    <beans:bean id="sqlSession"
+                class="org.mybatis.spring.SqlSessionTemplate">
+        <beans:constructor-arg index="0"
+                               ref="sqlSessionFactory"></beans:constructor-arg>
+    </beans:bean>
+
+    <!-- 이미지파일업로드 -->
+    <beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <beans:property name="maxUploadSize" value="52428800"/>
+        <beans:property name="defaultEncoding" value="utf-8"/>
+    </beans:bean>
+
+    <context:component-scan
+            base-package="com.tech.miaa.controller"/>
+
+    <context:component-scan base-package="com.tech.miaa.scheduler"/>
+    <task:scheduler id="UpdateScheduler" pool-size="10"/>
+    <task:annotation-driven scheduler="UpdateScheduler"/>
+    <!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<beans:property name="suffix" value=".jsp" />
+	</beans:bean>
+</beans:beans>

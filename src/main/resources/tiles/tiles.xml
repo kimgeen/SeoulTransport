@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<!--메인컨텐츠만 -->
+	<definition name="baselayout1"
+		template="/WEB-INF/views/tile_layout/baselayout1.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/common/header.jsp" />
+
+		<put-attribute name="main_contents" value="" />
+
+		<put-attribute name="footer"
+			value="/WEB-INF/views/common/footer.jsp" />
+	</definition>
+	<!--(사이드바+메인컨텐츠) -->
+	<definition name="baselayout2"
+		template="/WEB-INF/views/tile_layout/baselayout2.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+
+		<put-attribute name="side" value="/WEB-INF/views/rescue_ani/side.jsp" />
+		<put-attribute name="main_contents" value="" />
+
+		<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+	</definition>
+	<!--메인셀렉션 + (사이드바+메인컨텐츠) -->
+	<definition name="baselayout3"
+		template="/WEB-INF/views/tile_layout/baselayout3.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/common/header.jsp" />
+
+		<put-attribute name="main_selection" value="" />
+		<put-attribute name="side"
+			value="/WEB-INF/views/rescue_ani/side.jsp" />
+		<put-attribute name="main_contents" value="" />
+
+		<put-attribute name="footer"
+			value="/WEB-INF/views/common/footer.jsp" />
+	</definition>
+
+
+	<definition name="*.*.*.3" extends="baselayout3">
+		<put-attribute name="title" value="{3}" />
+		<put-attribute name="main_selection"
+			value="/WEB-INF/views/{1}/{2}_selection.jsp" />
+		<put-attribute name="side"
+			value="/WEB-INF/views/{1}/side.jsp" />
+		<put-attribute name="main_contents"
+			value="/WEB-INF/views/{1}/{2}.jsp" />
+	</definition>
+
+
+
+	<definition name="*.*.*.2" extends="baselayout2">
+		<put-attribute name="title" value="{3}" />
+		<put-attribute name="side"
+			value="/WEB-INF/views/{1}/side.jsp" />
+		<put-attribute name="main_contents"
+			value="/WEB-INF/views/{1}/{2}.jsp" />
+	</definition>
+	
+	<definition name="*.*.*.1" extends="baselayout1">
+		<put-attribute name="title" value="{3}" />
+		<put-attribute name="main_contents"
+			value="/WEB-INF/views/{1}/{2}.jsp" />
+	</definition>
+	
+	<definition name="*.*.1" extends="baselayout1">
+		<put-attribute name="title" value="{2}" />
+		<put-attribute name="main_contents"
+			value="/WEB-INF/views/{1}.jsp" />
+	</definition>
+	<definition name="*.*.*.2" extends="baselayout2">
+		<put-attribute name="title" value="{3}" />
+		<put-attribute name="side" value="/WEB-INF/views/{1}/side.jsp" />
+		<put-attribute name="main_contents" value="/WEB-INF/views/{1}/{2}.jsp" />
+	</definition>
+
+</tiles-definitions>

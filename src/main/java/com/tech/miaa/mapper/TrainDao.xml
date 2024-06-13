@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.tech.miaa.dao.TrainDao">
+	<select id="train_map_detailsearch" resultType="com.tech.miaa.dto.SeoulDistrictDto">
+		SELECT * FROM SEOULDISTRICT WHERE DISTRICT = #{param1}
+	</select>
+	
+	<select id="subway_address" resultType="com.tech.miaa.dto.SeoulSubway_AddressDto">
+		SELECT * FROM TRAIN_ADDRESS WHERE SUBWAY_NAME LIKE '%'||#{param1}||'%' AND TRAIN_NO=#{param2}
+	</select>
+	<select id="subway_address2" resultType="com.tech.miaa.dto.SeoulSubway_AddressDto">
+		SELECT * FROM TRAIN_ADDRESS WHERE SUBWAY_NAME LIKE '%'||#{param1}||'%'
+	</select>
+	
+	<select id="train_insearch" resultType="com.tech.miaa.dto.seoulTrain_inDto">
+		SELECT * FROM SEOULTRAIN_IN WHERE SUBWAY_NAME LIKE '%'||#{param1}||'%' AND TRAIN_NO=#{param2}
+	</select>
+	<select id="train_insearch2" resultType="com.tech.miaa.dto.seoulTrain_inDto">
+		SELECT * FROM SEOULTRAIN_IN WHERE SUBWAY_NAME LIKE '%'||#{param1}||'%'
+	</select>
+	
+	<select id="train_outsearch" resultType="com.tech.miaa.dto.seoulTrain_outDto">
+		SELECT * FROM SEOULTRAIN_OUT WHERE SUBWAY_NAME LIKE '%'||#{param1}||'%' AND TRAIN_NO=#{param2}
+	</select>
+	<select id="train_outsearch2" resultType="com.tech.miaa.dto.seoulTrain_outDto">
+		SELECT * FROM SEOULTRAIN_OUT WHERE SUBWAY_NAME LIKE '%'||#{param1}||'%'
+	</select>
+	
+	<select id="train_county_total" resultType="com.tech.miaa.dto.Seoul_Train_TotalDto">
+		SELECT COUNTY_NAME,SUM(TOTAL) AS TOTAL FROM (SELECT * FROM SEOULCOUNTY SC JOIN SEOULCOUNTY_TOTAL SEOUL ON SC.CITY_ID=SEOUL.CITY_ID) GROUP BY COUNTY_NAME
+	</select>
+</mapper>

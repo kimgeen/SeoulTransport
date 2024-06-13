@@ -1,0 +1,317 @@
+*{
+  box-sizing: border-box;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* 2번레이아웃 메인 내부 셀렉션 프레임 */
+.index{
+  font-size: 14px;
+  word-break: keep-all;
+}
+
+.main-selection-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
+}
+.main-selection-ex{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  font-weight: 400;
+}
+.main-selection-ex>div.title{
+  display: inline;
+  font-size: 48px;
+  border-bottom: 2px solid black;
+}
+.main-selection-ex>div.describe{
+  font-size: 14px;
+}
+/* 메인컨텐츠(top-btn+essential+table-container123+bottom-btn)*/
+.main-contents{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* 테이블형 컨텐츠 프레임 시작 */
+  /* 상단 버튼프레임 */
+ul.top-btns{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+ul.top-btns>li{
+  flex-shrink: 0;
+}
+ul.top-btns>li>button{
+  font-family: inherit;
+  padding: 13px 16px;
+  border-radius: 8px;
+  background-color: #E2F4FF;
+  border: none;
+  font-size: 15px;
+  line-height: 14px;
+  color: #606060;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+ul.top-btns>li>button:not([type="submit"]){
+  background-color: #FFFFFF;
+  border: 1px solid #EAECF0;
+}
+
+  /* 테이블형 본내용 프레임*/
+  .essential{
+    font-size: 12px;
+  }
+  .table{
+    border-top: 1px solid black;
+    text-align: center;
+  }
+  .table-container{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    margin-top: 15px;
+  }
+  .table-title{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    gap: 10px;
+  }
+  .table-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    border-bottom: 1px solid #EAECF0;
+  }
+  .row-title{
+    flex-basis: 120px;
+    flex-shrink: 0;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FAFAFA;
+  }
+  .row-title>span{
+    padding: 0;
+  }
+  .radio-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .table input,select,textarea{
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    border-width: 0.0625rem;
+    font-family: "Noto Sans KR", sans-serif;
+    box-shadow: none;
+    font-size: 14px;
+    border: 1px solid #DEDEDE;
+    color: inherit;
+    font-family: inherit;
+  }
+  .row-content>input[type="tel"]{
+    height: 38px;
+    width: 59px;
+    border: none;
+    padding: 0px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: "Noto Sans KR", sans-serif;
+    border: 1px solid #DEDEDE;
+  }
+  .row-content>input[type="tel"]:nth-of-type(n+2){
+    width: 65px;
+  }
+  /* row-content */
+  .row-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:12px;
+    padding: 16px 24px;
+  }
+  .radio-container{
+    display: flex;
+    gap:12px;
+  }
+
+  /* col-content */
+  .col-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start ;
+    padding: 16px 24px;
+  }
+  /* addr컨테이너 */
+  .zip-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .zip-container button{
+    padding: 13px 16px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border : 1px solid #606060;
+    font-size: 15px;
+    line-height: 14px;
+    font-family: inherit;
+    color: #606060;
+    font-weight: 500;
+    flex-shrink: 0;
+    
+  }
+  .addr-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .addr-container>input{
+    width: 500px;
+  }
+  /* table-multi-row */
+  .table-multi-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .table label{
+    padding: 13px 16px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border : 1px solid #606060;
+    font-size: 15px;
+    line-height: 14px;
+    font-family: inherit;
+    color: #606060;
+    font-weight: 500;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  input[type=file]::file-selector-button {
+   display: none;
+  }
+  input[type=file]{
+    cursor: pointer;
+  }
+  /* textarea */
+  #textarea-content{
+    width: 80%;
+  }
+  textarea{
+    width: 100%;
+    min-width: 300px;
+    height: 150px;
+    resize: none;
+  }
+
+  /* in-row-content */
+  .in-row-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:12px;
+  }
+  .image-ex-text{
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+/* bottom-btns */
+ul.bottom-btns{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+ul.bottom-btns>li{
+  flex-shrink: 0;
+}
+ul.bottom-btns>li>button{
+  font-family: inherit;
+  padding: 13px 16px;
+  border-radius: 8px;
+  background-color: #E2F4FF;
+  border: none;
+  font-size: 15px;
+  line-height: 14px;
+  color: #606060;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+ul.bottom-btns>li>button#cancel_write{
+  background-color: #FFFFFF;
+  border: 1px solid #EAECF0;
+}
+button#list{
+  background-color: #fafafa;
+  border-color: #eaecf0;
+}
+button#delete{
+  background-color: #f9f5ff;
+  border-color: #f9f5ff;
+  color: #6941c6;
+}
+
+/*textarea 제한글자 표시css  */
+    .textLengthWrap{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 13px;
+      color: #C2C2C2;
+    }
+	button{
+	font: inherit;
+	}
+  button:hover{
+    cursor: pointer;
+  }
+  input{
+    height: 40px;
+  }
+  /*문의 이미지  */
+  #inquiry-image {
+    width: 640px;
+    height: 360px;
+    border-radius: 20px;
+}
+.image-selection {
+    width: 1180px;
+    height: 360px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+  

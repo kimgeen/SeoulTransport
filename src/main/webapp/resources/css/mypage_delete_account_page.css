@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+#del_account {
+	border: 1px solid #0066FF;
+	font-size: 15px;
+	background-color: white;
+	color: #0066FF;
+	font-family: inherit;
+	border-color: #0066FF;
+	border-radius: 10px;
+	padding: 10px;
+	min-height: 10px;
+	min-width: 90px;
+}
+
+.input-box {
+	position: relative;
+	margin: 20px 0;
+}
+
+.input-box>input {
+	background: transparent;
+	border: none;
+	border-bottom: solid 1px #ccc;
+	padding: 30px 0px 5px 0px;
+	font-size: 15pt;
+	width: 400px;
+}
+
+input::placeholder {
+	color: transparent;
+}
+
+input:placeholder-shown+label {
+	color: #aaa;
+	font-size: 14pt;
+	top: 15px;
+}
+
+input:focus+label, label {
+	color: #8aa1a1;
+	font-size: 15pt;
+	pointer-events: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+}
+
+input:focus, input:not(:placeholder-shown){
+	border-bottom: solid 1px #0066FF;
+	outline: none;
+}
+
+}
+.input[type=submit] {
+	
+}
+
+.submit {
+	display: flex;
+	font-size: 12pt;
+	color: rgb(164, 164, 164);
+	margin: 40px 0px;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.delBtn-container{
+	display :flex;
+	justify-content: flex-start;
+	margin-top : 40px;
+	margin-bottom: 40px;
+}

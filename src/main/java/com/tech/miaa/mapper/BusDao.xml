@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.tech.miaa.dao.BusDao">
+	<select id="bus_detailsearchAll" resultType="Integer">
+		SELECT COUNT(*) FROM BUS_STATION BS 
+		INNER JOIN BUS_DISTRICT BD ON BS.STATION_NAME=BD.STATION_NAME WHERE BD.DISTRICT=#{param1}
+	</select>
+	<select id="bus_detailsearch" resultType="com.tech.miaa.dto.SeoulBusStationDto">
+		SELECT * FROM (SELECT ROWNUM RM,BS.STATION_NAME,BD.DISTRICT,BD.LOAD_COUNT,BS.STATION_TYPE,BS.X_SIZE,BS.Y_SIZE FROM BUS_STATION BS INNER JOIN 
+		BUS_DISTRICT BD ON BS.STATION_NAME=BD.STATION_NAME WHERE BD.DISTRICT=#{param1})
+		WHERE RM BETWEEN #{param2} AND #{param3}
+	</select>
+	<select id="bus_get_county_total" resultType="com.tech.miaa.dto.Seoul_Bus_TotalDto">
+		SELECT BUSSTATION_COUNTY,SUM(TOTAL_IN) AS TOTAL_IN,SUM(TOTAL_OUT) AS TOTAL_OUT FROM BUS_INOUT GROUP BY BUSSTATION_COUNTY
+	</select>
+</mapper>

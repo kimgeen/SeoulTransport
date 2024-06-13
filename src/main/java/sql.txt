@@ -1,0 +1,36 @@
+---------------개인 프로젝트
+--지하철 시간대별 승차자
+create table seoulTrain_in(
+train_No varchar2(20), subway_Name varchar2(50), H4_5 number,H5_6 number,H6_7 number,H7_8 number,H8_9 number,H9_10 number,H10_11 number,H11_12 number,H12_13 number,
+H13_14 number,H14_15 number,H15_16 number,H16_17 number,H17_18 number,H18_19 number,H19_20 number,H20_21 number,H21_22 number,H22_23 number,H23_24 number,H24_01 number,H01_02 number
+);
+--지하철 시간대별 하차자
+create table seoulTrain_out(
+train_No varchar2(20), subway_Name varchar2(50), H4_5 number,H5_6 number,H6_7 number,H7_8 number,H8_9 number,H9_10 number,H10_11 number,H11_12 number,H12_13 number,
+H13_14 number,H14_15 number,H15_16 number,H16_17 number,H17_18 number,H18_19 number,H19_20 number,H20_21 number,H21_22 number,H22_23 number,H23_24 number,H24_01 number,H01_02 number
+);
+--지하철 주소 및 전화번호
+create table Train_Address(
+subway_no number, train_No varchar2(50), subway_Name varchar2(50), subway_tell varchar2(50), subway_address varchar2(100)
+);
+--지하철 승하차수 전체
+create table seoulTotal_inout(train_No varchar2(50), subway_Name varchar2(50), total_in number, total_out number);
+--지하철 행정구역별 id
+create table seoulcounty(city_id number, city_name varchar2(50), county_name varchar2(50));
+--지하철 행정구역별 총 승하차
+create table seoulcounty_total(city_id number, total number);
+
+-- 행정구 좌표
+create table seoulDistrict(
+    District varchar2 (50), x_size number, y_size number
+);
+-----------------------------------------------------------
+--버스정류장 위치
+create table bus_station(station_name varchar2(100), x_size number, y_size number, station_type varchar2(50));
+create table bus_district(District varchar2 (50), station_name varchar2(100), load_count number);
+create table bus_inout(bus_no varchar2(100), bus_name varchar2(100), busstation_id number, busstation_name varchar2(100),busstation_county varchar2(100), 
+total_in number,total_out number, H00_in number,H00_out number,
+H01_in number,H01_out number,H02_in number,H02_out number,H03_in number,H03_out number,H04_in number,H04_out number,H05_in number,H05_out number,H06_in number,H06_out number,
+H07_in number,H07_out number,H08_in number,H08_out number,H09_in number,H09_out number,H10_in number,H10_out number,H11_in number,H11_out number,H12_in number,H12_out number,
+H13_in number,H13_out number,H14_in number,H14_out number,H15_in number,H15_out number,H16_in number,H16_out number,H17_in number,H17_out number,H18_in number,H18_out number,
+H19_in number,H19_out number,H20_in number,H20_out number,H21_in number,H21_out number,H22_in number,H22_out number,H23_in number,H23_out number,H24_in number,H24_out number);

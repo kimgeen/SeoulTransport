@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* 선택메뉴 메인제목 */
+.main-selection {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.selection-name {
+  font-size: 3rem;
+  font-weight: 600;
+  border-bottom: 0.125rem solid black;
+  padding-bottom: 0.5rem;
+}
+
+.selection-explain {
+  font-size: 0.875rem;
+  color: #363636;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}

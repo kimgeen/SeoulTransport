@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.main_text {
+	font-size: 80px;
+	font-weight: bold;
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+.main_img_src {
+	width: 100%;
+	height: 100%;
+}
+
+.item_find {
+	font-size: medium;
+	background-color: #f2f2f2;
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+	border : none;
+	border-radius: 50px;
+	width: 280px;
+	height: 280px;
+	flex-shrink: 0;
+}
+.item_registration {
+	font-size: medium;
+	background-color: #f2f2f2;
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+	border : none;
+	border-radius: 50px;
+	width: 280px;
+	height: 280px;
+	margin-left: 100px;
+	flex-shrink: 0;
+}
+.animal_find {
+	font-size: medium;
+	background-color: #f2f2f2;
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+	border : none;
+	border-radius: 50px;
+	width: 280px;
+	height: 280px;
+	margin-left: 100px;
+	flex-shrink: 0;
+}
+.animal_registration {
+	font-size: medium;
+	background-color: #f2f2f2;
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+	border : none;
+	border-radius: 50px;
+	width: 280px;
+	height: 280px;
+	margin-left: 100px;
+	flex-shrink: 0;
+}
