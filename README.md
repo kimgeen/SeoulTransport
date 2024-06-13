@@ -2,8 +2,10 @@
 
 **Spring을 활용한 서울시 교통정보 조회 사이트**
 
+<p align="center">
+  ![그림1](https://github.com/kimgeen/SeoulTransport/assets/146930254/7a436044-8976-4548-97fa-d149c65d027f)
+</p>
 
-![그림1](https://github.com/kimgeen/SeoulTransport/assets/146930254/7a436044-8976-4548-97fa-d149c65d027f)
 
 
 ## 💁🏻‍♀️프로젝트 소개
