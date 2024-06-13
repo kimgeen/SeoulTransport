@@ -2,8 +2,9 @@
 
 **Spring을 활용한 서울시 교통정보 조회 사이트**
 
+![Uploading 그림1.png…]()
 
-![그림1](https://github.com/kimgeen/SeoulTransport/assets/146930254/4b28e523-5ab0-4fdf-a766-210937584f14)
+
 
 ## 프로젝트 소개
 공공데이터 및 오픈 API를활용해 서울특별시의 
