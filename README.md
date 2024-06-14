@@ -45,7 +45,7 @@
 
 ### [자치구 선택화면]
 <p align="center">
-  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/ea212109-235f-4d4b-aa19-8f78af9204d6">
+  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/fb9f087a-849c-488a-83e4-b3ef40004b95">
 </p>
 
 <br/>
