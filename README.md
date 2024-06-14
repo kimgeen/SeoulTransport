@@ -38,6 +38,8 @@
 ## 페이지 별 기능
 
 ### 메인화면
-
+<p align="center">
+  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/d32b60b3-bcaf-4edb-8f22-c55d44a53bf0">
+</p>
 
 ## 💬프로젝트 진행 소감
