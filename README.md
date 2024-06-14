@@ -45,7 +45,7 @@
 
 ### [자치구 선택화면 및 버스정류소 선택기능]
 <p align="center">
-  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/5044b12d-8dc8-4021-9978-99a95201356e">
+  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/9853d293-a0b4-4683-9636-edbb563d7379">
 </p>
 
 * 카카오API를 활용해 서울시 행정구역 별 폴리곤으로 구역을 나누어 지도에 표시했습니다.
