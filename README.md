@@ -39,7 +39,7 @@
 
 ### 메인화면
 <p align="center">
-  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/d32b60b3-bcaf-4edb-8f22-c55d44a53bf0">
+  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/e31a64db-fdb0-47f5-8d71-7a152da12253">
 </p>
 
 ## 💬프로젝트 진행 소감
