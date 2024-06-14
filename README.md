@@ -79,7 +79,7 @@
 
 ### [버스/지하철 행정구역 별 승하차 통계 열람기능]
 <p align="center">
-  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/5804fc06-7a03-440a-a999-b00886bb5d22">
+  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/c968216d-c54b-417c-823a-b23b1d7763ac">
 </p>
 
 * 1
