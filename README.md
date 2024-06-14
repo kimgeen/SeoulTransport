@@ -57,12 +57,14 @@
   <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/14b2c8bf-3d30-48ac-a0f6-a26a08a65da1">
 </p>
 
-*
+* 1
+* 2
 
-<br/>
 ### [버스정류소 선택 및 해당 버스정류소의 노선정보 연람기능]
 <p align="center">
   <img src="">
 </p>
+
+<br/>
 
 ## 💬프로젝트 진행 소감
