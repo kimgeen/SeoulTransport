@@ -60,10 +60,13 @@
 * 1
 * 2
 
-### [버스정류소 선택 및 해당 버스정류소의 노선정보 연람기능]
+### [지하철역 선택 및 역별 지하철 정보]
 <p align="center">
-  <img src="">
+  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/8d78f988-00b0-47d2-8ccc-81e7a20cfc9c">
 </p>
+
+* 1
+* 2
 
 <br/>
 
