@@ -37,7 +37,7 @@
 
 ## 페이지 별 기능
 
-### 메인화면
+### [메인화면]
 <p align="center">
   <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/e31a64db-fdb0-47f5-8d71-7a152da12253">
 </p>
