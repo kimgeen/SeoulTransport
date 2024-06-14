@@ -54,9 +54,10 @@
 
 ### [버스정류소 노선정보 및 버스경로 확인기능]
 <p align="center">
-  <img src="">
+  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/14b2c8bf-3d30-48ac-a0f6-a26a08a65da1">
 </p>
-* 
+
+*
 
 <br/>
 ### [버스정류소 선택 및 해당 버스정류소의 노선정보 연람기능]
