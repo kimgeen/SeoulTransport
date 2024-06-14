@@ -43,7 +43,7 @@
 * 서비스 접속 시 초기화면으로 타일즈를 활용하여 header, main, footer로 구성된 화면입니다.
 * header에 버스 교통정보, 지하철 교통정보, 경로검색 3개의 버튼으로 사용자가 원하는 기능을 사용 할 수 있게 구성했습니다.
 
-### [자치구 선택화면]
+### [자치구 선택화면 및 버스정류소 선택기능]
 <p align="center">
   <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/5044b12d-8dc8-4021-9978-99a95201356e">
 </p>
