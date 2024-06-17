@@ -85,8 +85,8 @@
   <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/c968216d-c54b-417c-823a-b23b1d7763ac">
 </p>
 
-* 사이드바에 
-* 2
+* 서울시 행정구역 별 탑승자 통계가 나오는 페이지입니다.
+* 버스, 지하철 각각의 탑승자를 DB에서 가져와 차트 JS를 통해 구현했습니다.
 
 <br/>
 
