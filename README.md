@@ -85,7 +85,7 @@
   <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/c968216d-c54b-417c-823a-b23b1d7763ac">
 </p>
 
-* 1
+* 사이드바에 
 * 2
 
 <br/>
@@ -100,4 +100,4 @@
 
 <br/>
 
-## 💬프로젝트 진행 소감
+## 프로젝트 진행 소감
