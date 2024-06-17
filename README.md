@@ -18,7 +18,7 @@
 
 ## 개발 환경
 <p align="center">
-  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/e31a64db-fdb0-47f5-8d71-7a152da12253">
+  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/12ea18a6-e0df-4231-96df-524ce3ec924e">
 </p>
 
 <br/>
@@ -36,7 +36,7 @@
 ## 주요 기능 상세설명
 ### [메인화면]
 <p align="center">
-  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/12ea18a6-e0df-4231-96df-524ce3ec924e">
+  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/e31a64db-fdb0-47f5-8d71-7a152da12253">
 </p>
 
 * 서비스 접속 시 초기화면으로 타일즈를 활용하여 header, main, footer로 구성된 화면입니다.
