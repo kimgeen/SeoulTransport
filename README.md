@@ -92,7 +92,7 @@
 
 ### [버스/지하철 경로검색 기능]
 <p align="center">
-  <img src="">
+  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/ccd56880-57cb-4e1d-8a6f-be2db06722bf">
 </p>
 
 * 1
