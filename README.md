@@ -18,7 +18,7 @@
 
 ## 개발 환경
 <p align="center">
-  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/aea7fb5f-e51a-4124-83cf-6e5c6dc5b20c">
+  <img src="https://github.com/kimgeen/SeoulTransport/assets/146930254/36b0e331-afea-433d-9f84-6d3def286eaf">
 </p>
 
 <br/>
